@@ -21,6 +21,7 @@ const News = (props) => {
     let data = await fetch(url);
     //props.setProgress(30);
     let parsedData = await data.json();
+    console.log("parsedData = ", parsedData)
     //props.setProgress(70);
     if (page === 1) {
       setArticles(parsedData.articles);
